@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ทีมของเรา | Nexora Software</title>
+    <title data-i18n-title="team.title">ทีมของเรา | Nexora Software</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,17 +13,20 @@
   <body>
     <header class="site-header">
       <a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA</span></a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">เมนู</button>
-      <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก">
-        <a href="index.html">หน้าแรก</a><a href="index.html#services">บริการ</a><a href="index.html#work">ผลงาน</a><a class="active" href="team.html">ทีมของเรา</a>
-      </nav>
+      <div class="header-actions">
+        <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก" data-i18n-aria-label="common.mainNav">
+          <a href="index.html" data-i18n="common.home">หน้าแรก</a><a href="index.html#services" data-i18n="common.services">บริการ</a><a href="index.html#work" data-i18n="common.work">ผลงาน</a><a class="active" href="team.html" data-i18n="common.team">ทีมของเรา</a>
+        </nav>
+        <div class="language-toggle" role="group" aria-label="เลือกภาษา" data-i18n-aria-label="common.chooseLanguage"><button type="button" data-language="th" aria-label="ภาษาไทย">TH</button><button type="button" data-language="en" aria-label="English">EN</button><button type="button" data-language="zh" aria-label="简体中文">ZH</button></div>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="common.menu">เมนู</button>
+      </div>
     </header>
 
     <main>
       <section class="page-hero section-shell reveal">
         <p class="eyebrow"><span></span> THE PEOPLE BEHIND NEXORA</p>
-        <h1>ต่างความสามารถ<br><em>แต่เป้าหมายเดียวกัน</em></h1>
-        <p>ทีมของเรารวมมุมมองด้านธุรกิจ ระบบ การออกแบบ และการพัฒนา เพื่อทำให้ทุกไอเดียเกิดขึ้นได้จริง</p>
+        <h1 data-i18n-html="team.heroTitle">ต่างความสามารถ<br><em>แต่เป้าหมายเดียวกัน</em></h1>
+        <p data-i18n="team.heroDescription">ทีมของเรารวมมุมมองด้านธุรกิจ ระบบ การออกแบบ และการพัฒนา เพื่อทำให้ทุกไอเดียเกิดขึ้นได้จริง</p>
       </section>
 
       <section class="team-grid section-shell section-block">
@@ -31,34 +34,33 @@
           <div class="member-avatar avatar-one"><span>H</span></div>
           <p>PROJECT MANAGER / DEVELOPER</p>
           <h2>Hydra07188</h2>
-          <span>วางแผนงาน ประสานทีม และพัฒนาประสบการณ์บนเว็บไซต์</span>
-          <a href="portfolio/hydra07188/index.html">ดู Portfolio <b>↗</b></a>
+          <span data-i18n="team.pmDescription">วางแผนงาน ประสานทีม และพัฒนาประสบการณ์บนเว็บไซต์</span>
+          <a href="portfolio/hydra07188/index.html"><span data-i18n="team.viewPortfolio">ดู Portfolio</span> <b>↗</b></a>
         </article>
         <article class="member-card placeholder reveal">
           <div class="member-avatar avatar-two"><span>02</span></div>
-          <p>SYSTEM ANALYST</p><h2>ชื่อสมาชิก</h2>
-          <span>วิเคราะห์ความต้องการและออกแบบการทำงานของระบบ</span>
-          <small>รอเพิ่ม Portfolio</small>
+          <p>SYSTEM ANALYST</p><h2 data-i18n="team.memberName">ชื่อสมาชิก</h2>
+          <span data-i18n="team.analystDescription">วิเคราะห์ความต้องการและออกแบบการทำงานของระบบ</span>
+          <small data-i18n="team.portfolioComingSoon">รอเพิ่ม Portfolio</small>
         </article>
         <article class="member-card placeholder reveal">
           <div class="member-avatar avatar-three"><span>03</span></div>
-          <p>UX/UI DESIGNER</p><h2>ชื่อสมาชิก</h2>
-          <span>ออกแบบหน้าตาและประสบการณ์ใช้งานของผลิตภัณฑ์</span>
-          <small>รอเพิ่ม Portfolio</small>
+          <p>UX/UI DESIGNER</p><h2 data-i18n="team.memberName">ชื่อสมาชิก</h2>
+          <span data-i18n="team.designerDescription">ออกแบบหน้าตาและประสบการณ์ใช้งานของผลิตภัณฑ์</span>
+          <small data-i18n="team.portfolioComingSoon">รอเพิ่ม Portfolio</small>
         </article>
         <article class="member-card placeholder reveal">
           <div class="member-avatar avatar-four"><span>04</span></div>
-          <p>FRONTEND DEVELOPER</p><h2>ชื่อสมาชิก</h2>
-          <span>พัฒนาหน้าเว็บไซต์ให้ทำงานได้รวดเร็วและสวยงาม</span>
-          <small>รอเพิ่ม Portfolio</small>
+          <p>FRONTEND DEVELOPER</p><h2 data-i18n="team.memberName">ชื่อสมาชิก</h2>
+          <span data-i18n="team.frontendDescription">พัฒนาหน้าเว็บไซต์ให้ทำงานได้รวดเร็วและสวยงาม</span>
+          <small data-i18n="team.portfolioComingSoon">รอเพิ่ม Portfolio</small>
         </article>
       </section>
     </main>
 
     <footer>
       <a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA</span></a>
-      <p>960241 Group Project · 2026</p><a href="index.html">กลับหน้าแรก →</a>
+      <p>960241 Group Project · 2026</p><a href="index.html" data-i18n="common.backHome">กลับหน้าแรก →</a>
     </footer>
   </body>
 </html>
-

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nexora Software บริษัทพัฒนาซอฟต์แวร์ที่เปลี่ยนไอเดียให้เป็นระบบที่ใช้งานได้จริง">
+    <meta name="description" content="Nexora Software บริษัทพัฒนาซอฟต์แวร์ที่เปลี่ยนไอเดียให้เป็นระบบที่ใช้งานได้จริง" data-i18n-content="home.metaDescription">
     <title>Nexora Software | Digital solutions that work</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,31 +13,36 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="index.html" aria-label="Nexora Software หน้าแรก">
+      <a class="brand" href="index.html" aria-label="Nexora Software หน้าแรก" data-i18n-aria-label="common.homeAria">
         <span class="brand-mark">N</span>
         <span>NEXORA</span>
       </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">เมนู</button>
-      <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก">
-        <a class="active" href="index.html">หน้าแรก</a>
-        <a href="#services">บริการ</a>
-        <a href="#work">ผลงาน</a>
-        <a href="team.html">ทีมของเรา</a>
-      </nav>
+      <div class="header-actions">
+        <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก" data-i18n-aria-label="common.mainNav">
+          <a class="active" href="index.html" data-i18n="common.home">หน้าแรก</a>
+          <a href="#services" data-i18n="common.services">บริการ</a>
+          <a href="#work" data-i18n="common.work">ผลงาน</a>
+          <a href="team.html" data-i18n="common.team">ทีมของเรา</a>
+        </nav>
+        <div class="language-toggle" role="group" aria-label="เลือกภาษา" data-i18n-aria-label="common.chooseLanguage">
+          <button type="button" data-language="th" aria-label="ภาษาไทย">TH</button><button type="button" data-language="en" aria-label="English">EN</button><button type="button" data-language="zh" aria-label="简体中文">ZH</button>
+        </div>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="common.menu">เมนู</button>
+      </div>
     </header>
 
     <main>
       <section class="hero section-shell">
         <div class="hero-copy reveal">
           <p class="eyebrow"><span></span> SOFTWARE STUDIO · BANGKOK</p>
-          <h1>เราเปลี่ยนไอเดีย<br>ให้เป็น<span>ซอฟต์แวร์</span><br>ที่เติบโตไปกับคุณ</h1>
-          <p class="hero-description">ออกแบบและพัฒนาระบบดิจิทัลที่ใช้งานง่าย ปลอดภัย และตอบโจทย์ธุรกิจ ตั้งแต่แนวคิดจนถึงผลิตภัณฑ์ที่พร้อมใช้งาน</p>
+          <h1 data-i18n-html="home.heroTitle">เราเปลี่ยนไอเดีย<br>ให้เป็น<span>ซอฟต์แวร์</span><br>ที่เติบโตไปกับคุณ</h1>
+          <p class="hero-description" data-i18n="home.heroDescription">ออกแบบและพัฒนาระบบดิจิทัลที่ใช้งานง่าย ปลอดภัย และตอบโจทย์ธุรกิจ ตั้งแต่แนวคิดจนถึงผลิตภัณฑ์ที่พร้อมใช้งาน</p>
           <div class="hero-actions">
-            <a class="button primary" href="#work">ดูผลงานของเรา <span>↗</span></a>
-            <a class="text-link" href="team.html">รู้จักทีม <span>→</span></a>
+            <a class="button primary" href="#work"><span data-i18n="home.viewWork">ดูผลงานของเรา</span> <span>↗</span></a>
+            <a class="text-link" href="team.html"><span data-i18n="home.meetTeam">รู้จักทีม</span> <span>→</span></a>
           </div>
         </div>
-        <div class="hero-visual reveal" aria-label="ภาพประกอบระบบดิจิทัล">
+        <div class="hero-visual reveal" aria-label="ภาพประกอบระบบดิจิทัล" data-i18n-aria-label="home.heroVisualAria">
           <div class="orbit orbit-one"></div>
           <div class="orbit orbit-two"></div>
           <div class="core-card">
@@ -51,7 +56,7 @@
         </div>
       </section>
 
-      <section class="stats-bar" aria-label="สถิติบริษัท">
+      <section class="stats-bar" aria-label="สถิติบริษัท" data-i18n-aria-label="home.statsAria">
         <div><strong>12+</strong><span>PROJECTS DELIVERED</span></div>
         <div><strong>4</strong><span>TEAM MEMBERS</span></div>
         <div><strong>100%</strong><span>PASSION DRIVEN</span></div>
@@ -61,24 +66,24 @@
       <section id="services" class="services section-shell section-block">
         <div class="section-heading reveal">
           <p class="eyebrow"><span></span> WHAT WE DO</p>
-          <h2>สร้างโซลูชันที่<br><em>มากกว่าแค่โค้ด</em></h2>
-          <p>เราผสานเทคโนโลยี การออกแบบ และความเข้าใจธุรกิจ เพื่อสร้างประสบการณ์ที่มีคุณค่า</p>
+          <h2 data-i18n-html="home.servicesTitle">สร้างโซลูชันที่<br><em>มากกว่าแค่โค้ด</em></h2>
+          <p data-i18n="home.servicesDescription">เราผสานเทคโนโลยี การออกแบบ และความเข้าใจธุรกิจ เพื่อสร้างประสบการณ์ที่มีคุณค่า</p>
         </div>
         <div class="service-grid">
           <article class="service-card reveal">
             <span class="card-number">01</span><span class="card-icon">⌘</span>
             <h3>Web Application</h3>
-            <p>เว็บไซต์และเว็บแอปพลิเคชันที่รวดเร็ว รองรับทุกหน้าจอ และขยายต่อได้</p>
+            <p data-i18n="home.webAppDescription">เว็บไซต์และเว็บแอปพลิเคชันที่รวดเร็ว รองรับทุกหน้าจอ และขยายต่อได้</p>
           </article>
           <article class="service-card featured reveal">
             <span class="card-number">02</span><span class="card-icon">◫</span>
             <h3>Business System</h3>
-            <p>ระบบจัดการข้อมูลและกระบวนการทำงานที่ช่วยลดงานซ้ำและเพิ่มประสิทธิภาพ</p>
+            <p data-i18n="home.businessSystemDescription">ระบบจัดการข้อมูลและกระบวนการทำงานที่ช่วยลดงานซ้ำและเพิ่มประสิทธิภาพ</p>
           </article>
           <article class="service-card reveal">
             <span class="card-number">03</span><span class="card-icon">✦</span>
             <h3>UX/UI Design</h3>
-            <p>ออกแบบประสบการณ์ใช้งานที่ชัดเจน สวยงาม และยึดผู้ใช้เป็นศูนย์กลาง</p>
+            <p data-i18n="home.uxDescription">ออกแบบประสบการณ์ใช้งานที่ชัดเจน สวยงาม และยึดผู้ใช้เป็นศูนย์กลาง</p>
           </article>
         </div>
       </section>
@@ -87,38 +92,37 @@
         <div class="section-shell">
           <div class="section-heading light reveal">
             <p class="eyebrow"><span></span> SELECTED WORK</p>
-            <h2>ผลงานที่เรา<br><em>ภาคภูมิใจ</em></h2>
+            <h2 data-i18n-html="home.workTitle">ผลงานที่เรา<br><em>ภาคภูมิใจ</em></h2>
           </div>
           <div class="project-grid">
             <article class="project-card project-pos reveal">
               <p>RETAIL TECHNOLOGY</p><h3>SmartPOS</h3>
-              <span>ระบบขายหน้าร้านและจัดการสต็อกแบบเรียลไทม์</span>
+              <span data-i18n="home.smartPosDescription">ระบบขายหน้าร้านและจัดการสต็อกแบบเรียลไทม์</span>
             </article>
             <article class="project-card project-school reveal">
               <p>EDUCATION PLATFORM</p><h3>ClassFlow</h3>
-              <span>พื้นที่จัดการชั้นเรียน งาน และการสื่อสารในที่เดียว</span>
+              <span data-i18n="home.classFlowDescription">พื้นที่จัดการชั้นเรียน งาน และการสื่อสารในที่เดียว</span>
             </article>
             <article class="project-card project-health reveal">
               <p>HEALTHCARE</p><h3>CareConnect</h3>
-              <span>ระบบนัดหมายและติดตามข้อมูลการดูแลสุขภาพ</span>
+              <span data-i18n="home.careConnectDescription">ระบบนัดหมายและติดตามข้อมูลการดูแลสุขภาพ</span>
             </article>
           </div>
-          <p class="project-note">* ผลงานเป็นกรณีศึกษาจำลองเพื่อการศึกษา</p>
+          <p class="project-note" data-i18n="home.projectNote">* ผลงานเป็นกรณีศึกษาจำลองเพื่อการศึกษา</p>
         </div>
       </section>
 
       <section class="cta section-shell section-block reveal">
         <p class="eyebrow"><span></span> MEET THE PEOPLE</p>
-        <h2>เบื้องหลังทุกผลงาน<br>คือทีมที่เชื่อใน<span>ไอเดียเดียวกัน</span></h2>
-        <a class="button primary" href="team.html">พบกับทีมของเรา <span>→</span></a>
+        <h2 data-i18n-html="home.ctaTitle">เบื้องหลังทุกผลงาน<br>คือทีมที่เชื่อใน<span>ไอเดียเดียวกัน</span></h2>
+        <a class="button primary" href="team.html"><span data-i18n="home.meetOurTeam">พบกับทีมของเรา</span> <span>→</span></a>
       </section>
     </main>
 
     <footer>
       <a class="brand" href="index.html"><span class="brand-mark">N</span><span>NEXORA</span></a>
       <p>960241 Group Project · 2026</p>
-      <a href="#top">กลับขึ้นด้านบน ↑</a>
+      <a href="#top" data-i18n="common.backToTop">กลับขึ้นด้านบน ↑</a>
     </footer>
   </body>
 </html>
-
