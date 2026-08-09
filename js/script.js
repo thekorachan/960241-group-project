@@ -8,10 +8,10 @@ const translations = {
     'common.menu': 'เมนู',
     'common.backToTop': 'กลับขึ้นด้านบน ↑',
     'common.backHome': 'กลับหน้าแรก →',
-    'common.homeAria': 'Nexora Software หน้าแรก',
+    'common.homeAria': 'TurnBro Software หน้าแรก',
     'common.mainNav': 'เมนูหลัก',
     'common.chooseLanguage': 'เลือกภาษา',
-    'home.metaDescription': 'Nexora Software บริษัทพัฒนาซอฟต์แวร์ที่เปลี่ยนไอเดียให้เป็นระบบที่ใช้งานได้จริง',
+    'home.metaDescription': 'TurnBro Software บริษัทพัฒนาซอฟต์แวร์ที่เปลี่ยนไอเดียให้เป็นระบบที่ใช้งานได้จริง',
     'home.heroTitle': 'เราเปลี่ยนไอเดีย<br>ให้เป็น<span>ซอฟต์แวร์</span><br>ที่เติบโตไปกับคุณ',
     'home.heroDescription': 'ออกแบบและพัฒนาระบบดิจิทัลที่ใช้งานง่าย ปลอดภัย และตอบโจทย์ธุรกิจ ตั้งแต่แนวคิดจนถึงผลิตภัณฑ์ที่พร้อมใช้งาน',
     'home.viewWork': 'ดูผลงานของเรา',
@@ -30,7 +30,7 @@ const translations = {
     'home.projectNote': '* ผลงานเป็นกรณีศึกษาจำลองเพื่อการศึกษา',
     'home.ctaTitle': 'เบื้องหลังทุกผลงาน<br>คือทีมที่เชื่อใน<span>ไอเดียเดียวกัน</span>',
     'home.meetOurTeam': 'พบกับทีมของเรา',
-    'team.title': 'ทีมของเรา | Nexora Software',
+    'team.title': 'ทีมของเรา | TurnBro Software',
     'team.heroTitle': 'ต่างความสามารถ<br><em>แต่เป้าหมายเดียวกัน</em>',
     'team.heroDescription': 'ทีมของเรารวมมุมมองด้านธุรกิจ ระบบ การออกแบบ และการพัฒนา เพื่อทำให้ทุกไอเดียเกิดขึ้นได้จริง',
     'team.pmDescription': 'วางแผนงาน ประสานทีม และพัฒนาประสบการณ์บนเว็บไซต์',
@@ -64,10 +64,10 @@ const translations = {
     'common.menu': 'Menu',
     'common.backToTop': 'Back to top ↑',
     'common.backHome': 'Back to home →',
-    'common.homeAria': 'Nexora Software home',
+    'common.homeAria': 'TurnBro Software home',
     'common.mainNav': 'Main navigation',
     'common.chooseLanguage': 'Choose language',
-    'home.metaDescription': 'Nexora Software turns bold ideas into thoughtful, reliable digital products built for real-world growth.',
+    'home.metaDescription': 'TurnBro Software turns bold ideas into thoughtful, reliable digital products built for real-world growth.',
     'home.heroTitle': 'We turn bold ideas<br>into <span>software</span><br>built to grow with you',
     'home.heroDescription': 'We design and build intuitive, secure digital products that solve real business challenges—from the first spark of an idea to a launch-ready solution.',
     'home.viewWork': 'Explore our work',
@@ -86,7 +86,7 @@ const translations = {
     'home.projectNote': '* Concept projects created for educational purposes.',
     'home.ctaTitle': 'Behind every great product<br>is a team united by <span>one vision</span>',
     'home.meetOurTeam': 'Meet our team',
-    'team.title': 'Our Team | Nexora Software',
+    'team.title': 'Our Team | TurnBro Software',
     'team.heroTitle': 'Different strengths.<br><em>One shared ambition.</em>',
     'team.heroDescription': 'We unite business thinking, systems expertise, design craft, and development skill to turn promising ideas into products people can use and trust.',
     'team.pmDescription': 'Brings structure to every project, keeps the team aligned, and builds polished experiences for the web.',
@@ -120,10 +120,10 @@ const translations = {
     'common.menu': '菜单',
     'common.backToTop': '返回顶部 ↑',
     'common.backHome': '返回首页 →',
-    'common.homeAria': 'Nexora Software 首页',
+    'common.homeAria': 'TurnBro Software 首页',
     'common.mainNav': '主导航',
     'common.chooseLanguage': '选择语言',
-    'home.metaDescription': 'Nexora Software 将大胆创意转化为可靠、贴心，并能持续成长的数字产品。',
+    'home.metaDescription': 'TurnBro Software 将大胆创意转化为可靠、贴心，并能持续成长的数字产品。',
     'home.heroTitle': '让大胆创意<br>成为与你共同成长的<br><span>数字产品</span>',
     'home.heroDescription': '我们设计并开发直观、安全的数字产品，解决真实的商业挑战——从灵感萌芽到产品正式上线，全程与你并肩前行。',
     'home.viewWork': '探索我们的作品',
@@ -142,7 +142,7 @@ const translations = {
     'home.projectNote': '* 以下为教学用途而创作的概念案例。',
     'home.ctaTitle': '每一个出色产品的背后<br>都有一支因<span>共同愿景</span>而凝聚的团队',
     'home.meetOurTeam': '认识我们的团队',
-    'team.title': '我们的团队 | Nexora Software',
+    'team.title': '我们的团队 | TurnBro Software',
     'team.heroTitle': '各展所长，<br><em>共赴同一个目标。</em>',
     'team.heroDescription': '我们汇聚商业思维、系统专长、设计能力与开发技术，把充满潜力的创意变成值得信赖、真正好用的产品。',
     'team.pmDescription': '为项目建立清晰节奏，推动团队高效协作，并打造精致流畅的网页体验。',
@@ -173,7 +173,7 @@ const languageToggle = document.querySelector('.language-toggle');
 
 function getSavedLanguage() {
   try {
-    const savedLanguage = localStorage.getItem('nexora-language');
+    const savedLanguage = localStorage.getItem('turnbro-language');
     return ['th', 'en', 'zh'].includes(savedLanguage) ? savedLanguage : 'th';
   } catch {
     return 'th';
@@ -217,7 +217,7 @@ function setLanguage(language) {
   }
 
   try {
-    localStorage.setItem('nexora-language', language);
+    localStorage.setItem('turnbro-language', language);
   } catch {
     // The language switch still works when storage is unavailable.
   }
