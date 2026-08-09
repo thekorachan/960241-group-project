@@ -1,38 +1,57 @@
-# 960241 Group Project
+# TurnBro Software
 
-เว็บไซต์บริษัทพัฒนาซอฟต์แวร์จำลองสำหรับงานกลุ่มรายวิชา 960241
+เว็บไซต์บริษัทพัฒนาซอฟต์แวร์จำลองสำหรับงานกลุ่มรายวิชา 960241 จัดทำโดยทีมสมาชิก 3 คน เพื่อแนะนำบริการ ผลงานจำลอง บทบาทของสมาชิก และ Portfolio รายบุคคล
 
-## โครงสร้างโปรเจกต์
+## หน้าเว็บไซต์
 
-- `index.html` - หน้าแนะนำบริษัทและผลงาน
-- `team.html` - หน้ารวมสมาชิกและตำแหน่ง
-- `portfolio/<github-username>/` - Portfolio แยกของสมาชิกแต่ละคน
-- `css/style.css` - สไตล์ส่วนกลางของเว็บไซต์
-- `js/script.js` - JavaScript ส่วนกลาง
+- `index.html` - หน้าแนะนำบริษัท บริการ และกรณีศึกษาผลงาน SmartPOS, ClassFlow และ CareConnect
+- `team.html` - หน้ารวมสมาชิก ตำแหน่ง และลิงก์ไปยัง Portfolio ของแต่ละคน
+- `contact.html` - หน้าช่องทางติดต่อ แผนที่ และแบบฟอร์มตัวอย่าง
+- `css/style.css` - รูปแบบ Responsive, Animation และ Visual effects ส่วนกลาง
+- `js/script.js` - เมนูมือถือ, Reveal animation, Project card interaction และระบบภาษา TH/EN/ZH
 
-## วิธีเริ่มทำงาน
+## ความสามารถหลัก
 
-สมาชิกแต่ละคนควรสร้าง Branch และโฟลเดอร์ของตนเอง:
+- Responsive layout สำหรับ Desktop, Tablet และ Mobile
+- รองรับภาษาไทย อังกฤษ และจีน
+- Navigation เชื่อมต่อหน้า Home, ผลงาน, ทีม และ Contact
+- Project case studies อธิบายโจทย์ โซลูชัน และผลลัพธ์
+- Portfolio รายบุคคลเปิดผ่านลิงก์ออนไลน์จากหน้า Team
+- รองรับผู้ใช้ที่ตั้งค่า `prefers-reduced-motion`
+
+## วิธีเปิดในเครื่อง
+
+เปิด `index.html` โดยตรง หรือรัน Static server จากโฟลเดอร์โปรเจกต์:
+
+```bash
+python3 -m http.server 8000
+```
+
+จากนั้นเปิด `http://localhost:8000`
+
+## แนวทางการทำงานร่วมกัน
+
+สมาชิกแต่ละคนพัฒนางานบน Branch ของตนเอง แล้วส่ง Pull Request เข้า `main`:
 
 ```bash
 git switch main
 git pull origin main
-git switch -c portfolio-ชื่อของคุณ
-mkdir -p portfolio/ชื่อของคุณ
+git switch -c <branch-name>
+
+# หลังแก้ไขและทดสอบเรียบร้อย
+git add <files>
+git commit -m "Describe the change"
+git push -u origin <branch-name>
 ```
 
-หลังทำเสร็จให้ Commit, Push และเปิด Pull Request:
+Portfolio สามารถแยกเป็นโฟลเดอร์ภายในโปรเจกต์หรือเผยแพร่เป็นเว็บไซต์ภายนอกได้ แต่ต้องเชื่อมจาก `team.html` และเปิดใช้งานได้จริง
 
-```bash
-git add .
-git commit -m "เพิ่ม portfolio ของชื่อคุณ"
-git push -u origin portfolio-ชื่อของคุณ
-```
+## การเผยแพร่
 
-## สิ่งที่ต้องแก้ก่อนส่ง
+โปรเจกต์เป็น Static website และสามารถเผยแพร่ด้วย GitHub Pages โดยเลือก Deploy from a branch แล้วใช้ branch `main` กับโฟลเดอร์ `/ (root)`
 
-- เปลี่ยนชื่อบริษัทและเนื้อหาให้ตรงกับข้อตกลงของกลุ่ม
-- เพิ่มรายชื่อ ตำแหน่ง และลิงก์ Portfolio ของสมาชิกทุกคนใน `team.html`
-- ใส่ผลงานจำลองของบริษัทให้ครบ
-- ทดสอบลิงก์และการแสดงผลบนโทรศัพท์
+## หมายเหตุ
 
+- ผลงาน บริษัท และข้อมูลการติดต่อบางส่วนเป็นกรณีศึกษาจำลองเพื่อการศึกษา
+- แบบฟอร์ม Contact ยังไม่เชื่อมต่อระบบส่งอีเมลจริง
+- โปรเจกต์ไม่ใช้ Database หรือ Application server
