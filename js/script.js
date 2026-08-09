@@ -4,6 +4,7 @@ const translations = {
     'common.services': 'บริการ',
     'common.work': 'ผลงาน',
     'common.team': 'ทีมของเรา',
+    'common.contact': 'ติดต่อเรา',
     'common.ourTeam': 'ทีมของเรา →',
     'common.menu': 'เมนู',
     'common.backToTop': 'กลับขึ้นด้านบน ↑',
@@ -53,13 +54,37 @@ const translations = {
     'portfolio.selectedWork': 'ผลงานที่เลือกมา',
     'portfolio.groupProjectDescription': 'เว็บไซต์บริษัทพัฒนาซอฟต์แวร์จำลอง',
     'portfolio.addProject': 'เพิ่มผลงานของคุณ',
-    'portfolio.addProjectDescription': 'อธิบายโจทย์ สิ่งที่ทำ และเทคโนโลยีที่ใช้'
+    'portfolio.addProjectDescription': 'อธิบายโจทย์ สิ่งที่ทำ และเทคโนโลยีที่ใช้',
+    'contact.title': 'ติดต่อเรา | TurnBro Software',
+    'contact.heroTitle': 'มาคุยกันเรื่อง<br><em>โปรเจกต์ถัดไป</em>',
+    'contact.heroDescription': 'ทัก แชท หรือแวะมาพูดคุยไอเดียของคุณ ทีมงานยินดีให้คำปรึกษาโดยไม่มีค่าใช้จ่ายเบื้องต้น',
+    'contact.infoTitle': 'ช่องทางติดต่อ',
+    'contact.addressLabel': 'ที่อยู่',
+    'contact.addressValue': 'วิทยาลัยศิลปะ สื่อ และเทคโนโลยี มหาวิทยาลัยเชียงใหม่ (CAMT)',
+    'contact.emailLabel': 'อีเมล',
+    'contact.emailValue': 'hello@turnbro.example',
+    'contact.phoneLabel': 'โทรศัพท์',
+    'contact.phoneValue': '02-123-4567',
+    'contact.hoursLabel': 'เวลาทำการ',
+    'contact.hoursValue': 'จันทร์ – ศุกร์ 09:00 – 18:00 น.',
+    'contact.formTitle': 'ส่งข้อความถึงเรา',
+    'contact.formNote': '* แบบฟอร์มนี้เป็นตัวอย่างจำลองสำหรับงานกลุ่ม ยังไม่เชื่อมต่อระบบส่งอีเมลจริง',
+    'contact.nameLabel': 'ชื่อ',
+    'contact.namePlaceholder': 'ชื่อของคุณ',
+    'contact.emailFieldLabel': 'อีเมล',
+    'contact.emailPlaceholder': 'you@example.com',
+    'contact.subjectLabel': 'หัวข้อ',
+    'contact.subjectPlaceholder': 'สนใจปรึกษาเรื่องระบบเว็บแอป',
+    'contact.messageLabel': 'ข้อความ',
+    'contact.messagePlaceholder': 'เล่ารายละเอียดโปรเจกต์ของคุณคร่าว ๆ',
+    'contact.submitButton': 'ส่งข้อความ'
   },
   en: {
     'common.home': 'Home',
     'common.services': 'Services',
     'common.work': 'Our Work',
     'common.team': 'Our Team',
+    'common.contact': 'Contact',
     'common.ourTeam': 'Our Team →',
     'common.menu': 'Menu',
     'common.backToTop': 'Back to top ↑',
@@ -109,13 +134,37 @@ const translations = {
     'portfolio.selectedWork': 'Selected work',
     'portfolio.groupProjectDescription': 'A concept website for a modern software studio.',
     'portfolio.addProject': 'Add your next project',
-    'portfolio.addProjectDescription': 'Highlight the challenge, your contribution, and the technology behind the result.'
+    'portfolio.addProjectDescription': 'Highlight the challenge, your contribution, and the technology behind the result.',
+    'contact.title': 'Contact | TurnBro Software',
+    'contact.heroTitle': 'Let\'s talk about<br><em>your next project</em>',
+    'contact.heroDescription': 'Message us, call, or drop by to share your idea. We offer a free initial consultation for every project.',
+    'contact.infoTitle': 'Get in touch',
+    'contact.addressLabel': 'Address',
+    'contact.addressValue': 'College of Arts, Media and Technology (CAMT), Chiang Mai University',
+    'contact.emailLabel': 'Email',
+    'contact.emailValue': 'hello@turnbro.example',
+    'contact.phoneLabel': 'Phone',
+    'contact.phoneValue': '+66 2-123-4567',
+    'contact.hoursLabel': 'Office hours',
+    'contact.hoursValue': 'Mon – Fri, 9:00 AM – 6:00 PM',
+    'contact.formTitle': 'Send us a message',
+    'contact.formNote': '* This is a mock form for a class group project — it is not connected to a real email service.',
+    'contact.nameLabel': 'Name',
+    'contact.namePlaceholder': 'Your name',
+    'contact.emailFieldLabel': 'Email',
+    'contact.emailPlaceholder': 'you@example.com',
+    'contact.subjectLabel': 'Subject',
+    'contact.subjectPlaceholder': 'Interested in a web app project',
+    'contact.messageLabel': 'Message',
+    'contact.messagePlaceholder': 'Tell us a little about your project',
+    'contact.submitButton': 'Send message'
   },
   zh: {
     'common.home': '首页',
     'common.services': '服务',
     'common.work': '精选案例',
     'common.team': '我们的团队',
+    'common.contact': '联系我们',
     'common.ourTeam': '我们的团队 →',
     'common.menu': '菜单',
     'common.backToTop': '返回顶部 ↑',
@@ -165,7 +214,30 @@ const translations = {
     'portfolio.selectedWork': '精选作品',
     'portfolio.groupProjectDescription': '为现代软件工作室打造的概念网站。',
     'portfolio.addProject': '添加你的下一个项目',
-    'portfolio.addProjectDescription': '介绍项目挑战、你的贡献，以及实现成果所使用的技术。'
+    'portfolio.addProjectDescription': '介绍项目挑战、你的贡献，以及实现成果所使用的技术。',
+    'contact.title': '联系我们 | TurnBro Software',
+    'contact.heroTitle': '来聊聊<br><em>你的下一个项目</em>',
+    'contact.heroDescription': '欢迎留言、致电，或直接来访分享你的想法。我们为每个项目提供免费初步咨询。',
+    'contact.infoTitle': '联系方式',
+    'contact.addressLabel': '地址',
+    'contact.addressValue': '清迈大学 艺术、媒体与技术学院 (CAMT)',
+    'contact.emailLabel': '邮箱',
+    'contact.emailValue': 'hello@turnbro.example',
+    'contact.phoneLabel': '电话',
+    'contact.phoneValue': '02-123-4567',
+    'contact.hoursLabel': '工作时间',
+    'contact.hoursValue': '周一至周五 09:00 – 18:00',
+    'contact.formTitle': '给我们留言',
+    'contact.formNote': '* 此表单为课程小组作业的模拟示例，尚未连接真实的邮件发送系统。',
+    'contact.nameLabel': '姓名',
+    'contact.namePlaceholder': '你的姓名',
+    'contact.emailFieldLabel': '邮箱',
+    'contact.emailPlaceholder': 'you@example.com',
+    'contact.subjectLabel': '主题',
+    'contact.subjectPlaceholder': '想咨询网页应用项目',
+    'contact.messageLabel': '留言内容',
+    'contact.messagePlaceholder': '简单介绍一下你的项目',
+    'contact.submitButton': '发送留言'
   }
 };
 
@@ -202,6 +274,11 @@ function setLanguage(language) {
   document.querySelectorAll('[data-i18n-content]').forEach((element) => {
     const translation = dictionary[element.dataset.i18nContent];
     if (translation) element.setAttribute('content', translation);
+  });
+
+  document.querySelectorAll('[data-i18n-placeholder]').forEach((element) => {
+    const translation = dictionary[element.dataset.i18nPlaceholder];
+    if (translation) element.setAttribute('placeholder', translation);
   });
 
   const translatedTitle = document.querySelector('[data-i18n-title]');

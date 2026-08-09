@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n-title="contact.title">ติดต่อเรา | TurnBro Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TURNBRO</span></a>
+      <div class="header-actions">
+        <nav id="site-nav" class="site-nav" aria-label="เมนูหลัก" data-i18n-aria-label="common.mainNav">
+          <a href="index.html" data-i18n="common.home">หน้าแรก</a><a href="index.html#services" data-i18n="common.services">บริการ</a><a href="index.html#work" data-i18n="common.work">ผลงาน</a><a href="team.html" data-i18n="common.team">ทีมของเรา</a><a class="active" href="contact.html" data-i18n="common.contact">ติดต่อเรา</a>
+        </nav>
+        <div class="language-toggle" role="group" aria-label="เลือกภาษา" data-i18n-aria-label="common.chooseLanguage"><button type="button" data-language="th" aria-label="ภาษาไทย">TH</button><button type="button" data-language="en" aria-label="English">EN</button><button type="button" data-language="zh" aria-label="简体中文">ZH</button></div>
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav" data-i18n="common.menu">เมนู</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero section-shell reveal">
+        <p class="eyebrow"><span></span> GET IN TOUCH</p>
+        <h1 data-i18n-html="contact.heroTitle">มาคุยกันเรื่อง<br><em>โปรเจกต์ถัดไป</em></h1>
+        <p data-i18n="contact.heroDescription">ทัก แชท หรือแวะมาพูดคุยไอเดียของคุณ ทีมงานยินดีให้คำปรึกษาโดยไม่มีค่าใช้จ่ายเบื้องต้น</p>
+      </section>
+
+      <section class="contact-grid section-shell section-block">
+        <article class="info-block contact-info reveal">
+          <p class="eyebrow"><span></span> <b data-i18n="contact.infoTitle">ช่องทางติดต่อ</b></p>
+          <ul class="contact-list">
+            <li><b data-i18n="contact.addressLabel">ที่อยู่</b><span data-i18n="contact.addressValue">99/9 อาคาร TurnBro ถนนสุขุมวิท แขวงคลองตัน เขตคลองเตย กรุงเทพฯ 10110</span></li>
+            <li><b data-i18n="contact.emailLabel">อีเมล</b><span data-i18n="contact.emailValue">hello@turnbro.example</span></li>
+            <li><b data-i18n="contact.phoneLabel">โทรศัพท์</b><span data-i18n="contact.phoneValue">02-123-4567</span></li>
+            <li><b data-i18n="contact.hoursLabel">เวลาทำการ</b><span data-i18n="contact.hoursValue">จันทร์ – ศุกร์ 09:00 – 18:00 น.</span></li>
+          </ul>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps?q=College+of+Arts,+Media+and+Technology,+Chiang+Mai+University&output=embed" title="College of Arts, Media and Technology, Chiang Mai University" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+        </article>
+
+        <article class="info-block contact-form-block reveal">
+          <p class="eyebrow"><span></span> <b data-i18n="contact.formTitle">ส่งข้อความถึงเรา</b></p>
+          <form class="contact-form" onsubmit="return false">
+            <label>
+              <span data-i18n="contact.nameLabel">ชื่อ</span>
+              <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="ชื่อของคุณ">
+            </label>
+            <label>
+              <span data-i18n="contact.emailFieldLabel">อีเมล</span>
+              <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="you@example.com">
+            </label>
+            <label>
+              <span data-i18n="contact.subjectLabel">หัวข้อ</span>
+              <input type="text" name="subject" data-i18n-placeholder="contact.subjectPlaceholder" placeholder="สนใจปรึกษาเรื่องระบบเว็บแอป">
+            </label>
+            <label>
+              <span data-i18n="contact.messageLabel">ข้อความ</span>
+              <textarea name="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="เล่ารายละเอียดโปรเจกต์ของคุณคร่าว ๆ"></textarea>
+            </label>
+            <button class="button primary" type="submit"><span data-i18n="contact.submitButton">ส่งข้อความ</span></button>
+          </form>
+          <p class="contact-form-note" data-i18n="contact.formNote">* แบบฟอร์มนี้เป็นตัวอย่างจำลองสำหรับงานกลุ่ม ยังไม่เชื่อมต่อระบบส่งอีเมลจริง</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="index.html"><span class="brand-mark">T</span><span>TURNBRO</span></a>
+      <p>960241 Group Project · 2026</p><a href="index.html" data-i18n="common.backHome">กลับหน้าแรก →</a>
+    </footer>
+  </body>
+</html>
