@@ -139,7 +139,12 @@ const translations = {
     'service.ux.tool1': 'เครื่องมือออกแบบ UI หลัก',
     'service.ux.tool2': 'ทดสอบเส้นทางการใช้งานของผู้ใช้',
     'service.ux.tool3': 'จัดระเบียบความคิดและเอกสารทีม',
-    'service.ux.tool4': 'ชุดตัวแปรดีไซน์ให้ทีมใช้ร่วมกัน'
+    'service.ux.tool4': 'ชุดตัวแปรดีไซน์ให้ทีมใช้ร่วมกัน',
+    'externalConfirm.eyebrow': 'ลิงก์ภายนอก',
+    'externalConfirm.title': 'ออกจากเว็บไซต์นี้?',
+    'externalConfirm.message': 'คุณกำลังจะไปยังเว็บไซต์ภายนอก:',
+    'externalConfirm.cancel': 'ยกเลิก',
+    'externalConfirm.continue': 'ไปต่อ'
   },
   en: {
     'common.home': 'Home',
@@ -281,7 +286,12 @@ const translations = {
     'service.ux.tool1': 'Primary UI design tool.',
     'service.ux.tool2': 'Testing real user journeys.',
     'service.ux.tool3': 'Organizing ideas and team docs.',
-    'service.ux.tool4': 'Shared design tokens for the team.'
+    'service.ux.tool4': 'Shared design tokens for the team.',
+    'externalConfirm.eyebrow': 'External link',
+    'externalConfirm.title': 'Leave this site?',
+    'externalConfirm.message': 'You are about to visit an external website:',
+    'externalConfirm.cancel': 'Cancel',
+    'externalConfirm.continue': 'Continue'
   },
   zh: {
     'common.home': '首页',
@@ -423,7 +433,12 @@ const translations = {
     'service.ux.tool1': '主要的 UI 设计工具。',
     'service.ux.tool2': '测试真实用户使用路径。',
     'service.ux.tool3': '整理想法与团队文档。',
-    'service.ux.tool4': '团队共享的设计变量。'
+    'service.ux.tool4': '团队共享的设计变量。',
+    'externalConfirm.eyebrow': '外部链接',
+    'externalConfirm.title': '要离开本网站吗？',
+    'externalConfirm.message': '你即将前往外部网站：',
+    'externalConfirm.cancel': '取消',
+    'externalConfirm.continue': '继续前往'
   }
 };
 
@@ -552,3 +567,61 @@ projectCards.forEach((card) => {
     card.style.setProperty('--spot-y', '50%');
   });
 });
+
+const externalLinks = document.querySelectorAll('a[target="_blank"]');
+
+if (externalLinks.length) {
+  const overlay = document.createElement('div');
+  overlay.className = 'external-confirm-overlay';
+  overlay.innerHTML = `
+    <div class="external-confirm-modal" role="dialog" aria-modal="true" aria-labelledby="external-confirm-title">
+      <p class="eyebrow"><span></span> <b data-i18n="externalConfirm.eyebrow">ลิงก์ภายนอก</b></p>
+      <h3 id="external-confirm-title" data-i18n="externalConfirm.title">ออกจากเว็บไซต์นี้?</h3>
+      <p data-i18n="externalConfirm.message">คุณกำลังจะไปยังเว็บไซต์ภายนอก:</p>
+      <p class="external-confirm-url"></p>
+      <div class="external-confirm-actions">
+        <button type="button" class="external-confirm-cancel" data-i18n="externalConfirm.cancel">ยกเลิก</button>
+        <a class="button primary external-confirm-continue" target="_blank" rel="noopener noreferrer" href="#"><span data-i18n="externalConfirm.continue">ไปต่อ</span></a>
+      </div>
+    </div>`;
+  document.body.appendChild(overlay);
+  setLanguage(getSavedLanguage());
+
+  const urlEl = overlay.querySelector('.external-confirm-url');
+  const continueBtn = overlay.querySelector('.external-confirm-continue');
+  const cancelBtn = overlay.querySelector('.external-confirm-cancel');
+  let lastFocused = null;
+
+  function openExternalConfirm(href) {
+    urlEl.textContent = href;
+    continueBtn.href = href;
+    lastFocused = document.activeElement;
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    cancelBtn.focus();
+  }
+
+  function closeExternalConfirm() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+    if (lastFocused) lastFocused.focus();
+  }
+
+  externalLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      openExternalConfirm(link.href);
+    });
+  });
+
+  cancelBtn.addEventListener('click', closeExternalConfirm);
+  continueBtn.addEventListener('click', closeExternalConfirm);
+
+  overlay.addEventListener('click', (event) => {
+    if (event.target === overlay) closeExternalConfirm();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && overlay.classList.contains('open')) closeExternalConfirm();
+  });
+}
