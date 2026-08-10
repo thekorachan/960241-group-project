@@ -29,19 +29,6 @@ python3 -m http.server 8000
 
 จากนั้นเปิด `http://localhost:8000`
 
-## แนวทางการทำงานร่วมกัน
-
-สมาชิกแต่ละคนพัฒนางานบน Branch ของตนเอง แล้วส่ง Pull Request เข้า `main`:
-
-```bash
-git switch main
-git pull origin main
-git switch -c <branch-name>
-
-# หลังแก้ไขและทดสอบเรียบร้อย
-git add <files>
-git commit -m "Describe the change"
-git push -u origin <branch-name>
 ```
 
 Portfolio สามารถแยกเป็นโฟลเดอร์ภายในโปรเจกต์หรือเผยแพร่เป็นเว็บไซต์ภายนอกได้ แต่ต้องเชื่อมจาก `team.html` และเปิดใช้งานได้จริง
