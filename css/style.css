@@ -118,7 +118,22 @@ a { color: inherit; text-decoration: none; }
 .project-note { color: rgba(255,255,255,.55); font-size: 12px; }
 
 .cta { text-align: center; }.cta .eyebrow { justify-content: center; }.cta h2 { line-height: 1.25; }.cta h2 span { padding-inline: 7px; background: linear-gradient(to top, var(--lime) 0 72%, transparent 72%); color: var(--ink); box-decoration-break: clone; -webkit-box-decoration-break: clone; }.cta .button { margin-top: 24px; }
-footer { min-height: 120px; padding: 30px max(24px, calc((100vw - 1180px) / 2)); display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); font-size: 13px; }
+.site-footer { padding: 0 max(24px, calc((100vw - 1180px) / 2)); background: var(--ink); color: var(--white); }
+.footer-main { padding-block: 76px 64px; display: grid; grid-template-columns: minmax(260px, 1fr) 1.65fr; gap: clamp(60px, 9vw, 130px); }
+.footer-brand .brand { width: max-content; font-size: 21px; }
+.footer-brand .brand-logo { width: 50px; height: 50px; }
+.footer-brand > p { max-width: 390px; margin: 26px 0 24px; color: rgba(255,255,255,.64); font-size: 15px; line-height: 1.8; }
+.footer-location { display: inline-flex; align-items: center; gap: 9px; color: rgba(255,255,255,.78); font: 700 11px var(--display); letter-spacing: .1em; text-transform: uppercase; }
+.footer-location::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--lime); box-shadow: 0 0 0 5px rgba(201,255,47,.12); }
+.footer-nav { padding-top: 17px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
+.footer-nav > div { display: flex; align-items: flex-start; flex-direction: column; gap: 13px; }
+.footer-nav h2 { margin: 0 0 10px; color: var(--lime); font: 800 11px var(--display); letter-spacing: .14em; text-transform: uppercase; }
+.footer-nav a { position: relative; color: rgba(255,255,255,.68); font-size: 14px; transition: color .2s ease, transform .2s ease; }
+.footer-nav a:hover { color: var(--white); transform: translateX(4px); }
+.footer-nav a::after { content: ""; position: absolute; left: 0; right: 100%; bottom: -3px; height: 1px; background: var(--lime); transition: right .2s ease; }
+.footer-nav a:hover::after { right: 0; }
+.footer-bottom { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid rgba(255,255,255,.14); color: rgba(255,255,255,.44); font: 600 11px var(--display); letter-spacing: .05em; }
+.footer-bottom p { margin: 0; }
 
 .page-hero { padding-block: 110px 65px; }.page-hero h1 { max-width: 900px; }.page-hero > p:last-child { max-width: 650px; color: var(--muted); font-size: 18px; line-height: 1.8; }
 .team-grid { padding-top: 20px; display: flex; align-items: stretch; gap: 24px; }
@@ -181,7 +196,7 @@ footer { min-height: 120px; padding: 30px max(24px, calc((100vw - 1180px) / 2));
   .stats-bar { grid-template-columns: 1fr 1fr; gap: 24px 0; }.stats-bar div:nth-child(2) { border: 0; }
   .team-grid { flex-direction: column; }.service-grid, .project-grid, .profile-content, .contact-grid { grid-template-columns: 1fr; }.project-pos { grid-row: auto; min-height: 620px; }.info-block.wide { grid-column: auto; }
   .profile-hero { padding-block: 60px; grid-template-columns: 1fr; gap: 45px; }.profile-photo { height: 400px; }.mini-projects { grid-template-columns: 1fr; }
-  footer { gap: 24px; flex-direction: column; text-align: center; }
+  .footer-main { padding-block: 58px 46px; grid-template-columns: 1fr; gap: 48px; }.footer-nav { padding-top: 0; gap: 26px; }.footer-bottom { padding-block: 24px; min-height: 0; }
 }
 
 @media (max-width: 500px) {
@@ -189,4 +204,5 @@ footer { min-height: 120px; padding: 30px max(24px, calc((100vw - 1180px) / 2));
   .hero-actions { align-items: flex-start; flex-direction: column; }.hero-visual { height: 380px; }.orbit-one { width: 260px; height: 260px; }.orbit-two { width: 170px; height: 290px; }.core-card { width: 180px; }
   .stats-bar { grid-template-columns: 1fr; }.stats-bar div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.16); padding-bottom: 16px; }.stats-bar div:last-child { border: 0; }
   .member-avatar { height: 270px; }.profile-photo { height: 340px; }.project-card { padding: 24px; }.project-mockup { top: 24px; right: 24px; }.project-pos .project-mockup { width: calc(100% - 48px); height: 190px; }
+  .footer-main { padding-block: 48px 38px; }.footer-nav { grid-template-columns: 1fr 1fr; row-gap: 36px; }.footer-nav > div:last-child { grid-column: 1 / -1; }.footer-bottom { align-items: flex-start; flex-direction: column; gap: 8px; }
 }
