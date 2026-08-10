@@ -45,26 +45,29 @@
 
         <article class="info-block contact-form-block reveal">
           <p class="eyebrow"><span></span> <b data-i18n="contact.formTitle">ส่งข้อความถึงเรา</b></p>
-          <form class="contact-form" onsubmit="return false">
-            <label>
-              <span data-i18n="contact.nameLabel">ชื่อ</span>
-              <input type="text" name="name" data-i18n-placeholder="contact.namePlaceholder" placeholder="ชื่อของคุณ">
-            </label>
-            <label>
-              <span data-i18n="contact.emailFieldLabel">อีเมล</span>
-              <input type="email" name="email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="you@example.com">
-            </label>
+          <form class="contact-form" action="https://formsubmit.co/kora@thekorachan.com" method="POST">
+            <input type="hidden" name="_subject" value="New message from the TurnBro website">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" hidden>
             <label>
               <span data-i18n="contact.subjectLabel">หัวข้อ</span>
-              <input type="text" name="subject" data-i18n-placeholder="contact.subjectPlaceholder" placeholder="สนใจปรึกษาเรื่องระบบเว็บแอป">
+              <input type="text" name="Subject" data-i18n-placeholder="contact.subjectPlaceholder" placeholder="สนใจปรึกษาเรื่องระบบเว็บแอป" required>
             </label>
             <label>
               <span data-i18n="contact.messageLabel">ข้อความ</span>
-              <textarea name="message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="เล่ารายละเอียดโปรเจกต์ของคุณคร่าว ๆ"></textarea>
+              <textarea name="Message" rows="5" data-i18n-placeholder="contact.messagePlaceholder" placeholder="เล่ารายละเอียดโปรเจกต์ของคุณคร่าว ๆ" required></textarea>
+            </label>
+            <label>
+              <span data-i18n="contact.nameLabel">ชื่อ</span>
+              <input type="text" name="Name" data-i18n-placeholder="contact.namePlaceholder" placeholder="ชื่อของคุณ" autocomplete="name" required>
+            </label>
+            <label>
+              <span data-i18n="contact.emailFieldLabel">อีเมล</span>
+              <input type="email" name="Email" data-i18n-placeholder="contact.emailPlaceholder" placeholder="you@example.com" autocomplete="email" required>
             </label>
             <button class="button primary" type="submit"><span data-i18n="contact.submitButton">ส่งข้อความ</span></button>
           </form>
-          <p class="contact-form-note" data-i18n="contact.formNote">* แบบฟอร์มนี้เป็นตัวอย่างจำลองสำหรับงานกลุ่ม ยังไม่เชื่อมต่อระบบส่งอีเมลจริง</p>
+          <p class="contact-form-note" data-i18n="contact.formNote">* ข้อความจะถูกส่งไปยังทีม TurnBro ผ่านบริการ FormSubmit</p>
         </article>
       </section>
     </main>
