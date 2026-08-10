@@ -1,44 +1,102 @@
 # TurnBro Software
 
-เว็บไซต์บริษัทพัฒนาซอฟต์แวร์จำลองสำหรับงานกลุ่มรายวิชา 960241 จัดทำโดยทีมสมาชิก 3 คน เพื่อแนะนำบริการ ผลงานจำลอง บทบาทของสมาชิก และ Portfolio รายบุคคล
+เว็บไซต์บริษัทพัฒนาซอฟต์แวร์จำลองสำหรับงานกลุ่มรายวิชา **960241** นำเสนอภาพรวมบริษัท บริการ กรณีศึกษา และสมาชิกทีมผ่านเว็บไซต์แบบ Static ที่รองรับภาษาไทย อังกฤษ และจีน
 
-## หน้าเว็บไซต์
+> โปรเจกต์นี้จัดทำเพื่อการศึกษา ชื่อบริษัท ข้อมูลติดต่อ ลูกค้า และผลลัพธ์ของกรณีศึกษาบางส่วนเป็นข้อมูลจำลอง
 
-- `index.html` - หน้าแนะนำบริษัท บริการ และกรณีศึกษาผลงาน SmartPOS, ClassFlow และ CareConnect
-- `team.html` - หน้ารวมสมาชิก ตำแหน่ง และลิงก์ไปยัง Portfolio ของแต่ละคน
-- `contact.html` - หน้าช่องทางติดต่อ แผนที่ และแบบฟอร์มตัวอย่าง
-- `css/style.css` - รูปแบบ Responsive, Animation และ Visual effects ส่วนกลาง
-- `js/script.js` - เมนูมือถือ, Reveal animation, Project card interaction และระบบภาษา TH/EN/ZH
+## จุดเด่น
 
-## ความสามารถหลัก
+- Responsive design รองรับ Desktop, Tablet และ Mobile
+- สลับภาษาไทย อังกฤษ และจีน พร้อมจดจำภาษาที่เลือกในเบราว์เซอร์
+- หน้าแนะนำบริการ Web Application, Business System และ UX/UI Design
+- กรณีศึกษาจำลอง SmartPOS, ClassFlow และ CareConnect
+- หน้าแนะนำสมาชิกทีมพร้อมลิงก์ Portfolio รายบุคคล
+- Mobile navigation, scroll reveal และ interactive project cards
+- กล่องยืนยันก่อนเปิดลิงก์ภายนอก
+- รองรับ `prefers-reduced-motion` เพื่อช่วยลด Animation ตามการตั้งค่าของผู้ใช้
 
-- Responsive layout สำหรับ Desktop, Tablet และ Mobile
-- รองรับภาษาไทย อังกฤษ และจีน
-- Navigation เชื่อมต่อหน้า Home, ผลงาน, ทีม และ Contact
-- Project case studies อธิบายโจทย์ โซลูชัน และผลลัพธ์
-- Portfolio รายบุคคลเปิดผ่านลิงก์ออนไลน์จากหน้า Team
-- รองรับผู้ใช้ที่ตั้งค่า `prefers-reduced-motion`
+## เทคโนโลยี
 
-## วิธีเปิดในเครื่อง
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Google Fonts: Manrope และ Noto Sans Thai
+- Google Maps Embed สำหรับแผนที่ในหน้าติดต่อ
 
-เปิด `index.html` โดยตรง หรือรัน Static server จากโฟลเดอร์โปรเจกต์:
+โปรเจกต์นี้ไม่มี Build step, Package manager, Framework, Database หรือ Application server
 
-```bash
-python3 -m http.server 8000
+## เริ่มต้นใช้งาน
+
+สิ่งที่ต้องมี: เว็บเบราว์เซอร์สมัยใหม่ และ Python 3 หากต้องการรันผ่าน Local server
+
+1. Clone Repository และเข้าไปยังโฟลเดอร์โปรเจกต์
+
+   ```bash
+   git clone https://github.com/thekorachan/960241-group-project.git
+   cd 960241-group-project
+   ```
+
+2. เปิด `index.html` โดยตรง หรือรัน Local server (แนะนำ)
+
+   ```bash
+   python3 -m http.server 8000
+   ```
+
+3. เปิด [http://localhost:8000](http://localhost:8000) ในเบราว์เซอร์
+
+> การเชื่อมต่ออินเทอร์เน็ตจำเป็นสำหรับการโหลด Google Fonts, แผนที่ และ Portfolio ภายนอก ส่วนเนื้อหาหลักของเว็บไซต์ยังเปิดจากไฟล์ในเครื่องได้
+
+## โครงสร้างโปรเจกต์
+
+```text
+.
+├── index.html                 # หน้าแรก บริการ และกรณีศึกษา
+├── team.html                  # สมาชิกทีมและ Portfolio
+├── contact.html               # ข้อมูลติดต่อ แผนที่ และแบบฟอร์มตัวอย่าง
+├── web-application.html       # รายละเอียดบริการ Web Application
+├── business-system.html       # รายละเอียดบริการ Business System
+├── ux-ui-design.html          # รายละเอียดบริการ UX/UI Design
+├── css/
+│   └── style.css              # Style, responsive layout และ animation
+├── js/
+│   └── script.js              # Navigation, i18n และ interaction
+└── asset/
+    └── image/                 # Logo, รูปสมาชิก และภาพกรณีศึกษา
 ```
 
-จากนั้นเปิด `http://localhost:8000`
+## การแก้ไขเนื้อหา
 
-```
+- แก้โครงสร้างและข้อความเริ่มต้นในไฟล์ `.html` ที่เกี่ยวข้อง
+- แก้คำแปลทั้งสามภาษาใน Object `translations` ภายใน `js/script.js`
+- แก้รูปแบบ สี และ Responsive breakpoints ใน `css/style.css`
+- เพิ่มหรือเปลี่ยนรูปภาพใน `asset/image/` แล้วอัปเดต Path ที่อ้างอิงใน HTML หรือ CSS
 
-Portfolio สามารถแยกเป็นโฟลเดอร์ภายในโปรเจกต์หรือเผยแพร่เป็นเว็บไซต์ภายนอกได้ แต่ต้องเชื่อมจาก `team.html` และเปิดใช้งานได้จริง
+เมื่อเพิ่มข้อความที่ต้องแปล ให้กำหนด Translation key เดียวกันในภาษา `th`, `en` และ `zh` เพื่อไม่ให้เนื้อหาบางภาษาขาดหาย
 
-## การเผยแพร่
+## การเผยแพร่ด้วย GitHub Pages
 
-โปรเจกต์เป็น Static website และสามารถเผยแพร่ด้วย GitHub Pages โดยเลือก Deploy from a branch แล้วใช้ branch `main` กับโฟลเดอร์ `/ (root)`
+1. Push โปรเจกต์ขึ้น GitHub
+2. เปิด **Settings → Pages**
+3. ในหัวข้อ **Build and deployment** เลือก **Deploy from a branch**
+4. เลือก Branch `main` และโฟลเดอร์ `/ (root)` แล้วกด **Save**
 
-## หมายเหตุ
+เนื่องจากเว็บไซต์ใช้ Relative paths จึงไม่ต้องตั้งค่า Build เพิ่มเติมสำหรับ GitHub Pages
 
-- ผลงาน บริษัท และข้อมูลการติดต่อบางส่วนเป็นกรณีศึกษาจำลองเพื่อการศึกษา
-- แบบฟอร์ม Contact ยังไม่เชื่อมต่อระบบส่งอีเมลจริง
-- โปรเจกต์ไม่ใช้ Database หรือ Application server
+## ข้อจำกัด
+
+- แบบฟอร์มใน `contact.html` เป็น Demo และยังไม่ส่งข้อมูลหรืออีเมลจริง
+- อีเมล หมายเลขโทรศัพท์ และข้อมูลบริษัทบางส่วนเป็น Placeholder
+- ผลงานและตัวเลขผลลัพธ์ในกรณีศึกษาเป็นข้อมูลจำลองเพื่อการศึกษา
+- ไม่มี Automated test suite; ควรตรวจสอบทุกหน้า ทุกภาษา และหลายขนาดหน้าจอก่อนเผยแพร่
+
+## ทีมผู้จัดทำ
+
+- **Hydra07188** — Project Manager / Developer
+- **thekorachan** — UX/UI Designer / Front-end Developer
+- **Kitichet.me** — Full-stack Developer
+
+ดู Portfolio ของสมาชิกแต่ละคนได้จากหน้า `team.html`
+
+---
+
+จัดทำเพื่อรายวิชา **960241 Group Project** · © 2026 TurnBro
